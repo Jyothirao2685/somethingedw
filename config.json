@@ -1,0 +1,16 @@
+{
+  "baseUrl": "https://adroitco.in",
+  "blogsUrl": "https://adroitco.in/admin/blogs",
+  "apiUrl": "https://adroitco.in/api",
+  "adminToken": "5a38c5a28cc10f6cfe5e5986746941632d6da4ada73cc71a46a361b6b2f201e3",
+  "adminUser": {
+    "id": 1,
+    "username": "admin",
+    "role": "superadmin"
+  },
+  "browser": {
+    "headless": false,
+    "slowMo": 150
+  },
+  "delayBetweenPostsMs": 2000
+}

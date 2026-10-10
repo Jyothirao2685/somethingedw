@@ -1,0 +1,15 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# 1. Proxy API and Upload requests to the Node.js backend on port 5005
+RewriteCond %{REQUEST_URI} ^/(api|uploads) [NC]
+RewriteRule ^(api|uploads)/(.*) http://127.0.0.1:5005/$1/$2 [P,L]
+
+# 2. Don't rewrite real files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 3. SPA fallback — Rewrite everything else to index.html
+RewriteRule ^ index.html [L]

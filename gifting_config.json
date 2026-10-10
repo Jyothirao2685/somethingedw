@@ -1,0 +1,11 @@
+{
+  "baseUrl": "https://gifting.novaeventsco.com",
+  "blogListUrl": "https://gifting.novaeventsco.com/blog.php",
+  "apiUrl": "https://gifting.novaeventsco.com/api/create-blog.php",
+  "apiKey": "nova_secret_key_2026",
+  "authMethods": {
+    "headerBearer": "Authorization: Bearer nova_secret_key_2026",
+    "headerXApiKey": "X-API-KEY: nova_secret_key_2026",
+    "jsonField": "api_key: nova_secret_key_2026"
+  }
+}

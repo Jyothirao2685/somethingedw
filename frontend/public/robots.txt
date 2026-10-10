@@ -1,0 +1,35 @@
+# robots.txt for https://adroitco.in/
+# Adroit Group | Luxury Real Estate Delhi NCR
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Block unnecessary/private pages
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /?s=
+Disallow: /search/
+Disallow: /tag/
+Disallow: /feed/
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /wp-admin/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# Sitemap
+Sitemap: https://adroitco.in/sitemap.xml

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange-light: #ff9e5e;
+  --color-brand-orange: #f37b12;
+  --color-brand-orange-dark: #d6650b;
+  
+  --color-brand-blue-light: #44a5f0;
+  --color-brand-blue: #0872b8;
+  --color-brand-blue-dark: #065a94;
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-zinc-600 bg-white antialiased selection:bg-brand-orange selection:text-white;
+  }
+}
+
+@layer components {
+  /* Minimalist Utility Classes */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  /* Extremely refined buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center h-12 px-8 rounded-full bg-zinc-900 text-white font-medium text-sm transition-all duration-300 hover:bg-brand-orange hover:shadow-lg hover:shadow-brand-orange/20;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center h-12 px-8 rounded-full bg-white text-zinc-900 border border-zinc-200 font-medium text-sm transition-all duration-300 hover:border-zinc-900 hover:bg-zinc-50;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-orange to-brand-blue;
+  }
+}
+
+/* Base resets */
+html {
+  /* scroll-behavior: smooth; Removed to prevent conflict with Lenis */
+}
+
+::selection {
+  background-color: #f37b12;
+  color: white;
+}
+
+/* LazyImage shimmer — defined once globally */
+@keyframes lazyShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

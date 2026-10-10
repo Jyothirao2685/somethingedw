@@ -1,0 +1,10 @@
+{
+  "baseUrl": "https://novaeventsco.com",
+  "adminUrl": "https://novaeventsco.com/admin",
+  "apiUrl": "https://novaeventsco.com/api",
+  "adminToken": "nova_admin_super_secret_2024",
+  "browser": {
+    "headless": false,
+    "slowMo": 80
+  }
+}
