@@ -1,5 +1,4 @@
 export const locationsList = [
-  // 19 India Locations
   { name: 'Jaipur', slug: 'jaipur', state: 'Rajasthan', country: 'India' },
   { name: 'Udaipur', slug: 'udaipur', state: 'Rajasthan', country: 'India' },
   { name: 'Jim Corbett', slug: 'jim-corbett', state: 'Uttarakhand', country: 'India' },
@@ -18,15 +17,7 @@ export const locationsList = [
   { name: 'Mumbai', slug: 'mumbai', state: 'Maharashtra', country: 'India' },
   { name: 'Dwarka', slug: 'dwarka', state: 'Delhi', country: 'India' },
   { name: 'Agra', slug: 'agra', state: 'Uttar Pradesh', country: 'India' },
-  { name: 'Jammu', slug: 'jammu', state: 'Jammu & Kashmir', country: 'India' },
-
-  // USA Locations
-  { name: 'Atlanta', slug: 'atlanta', state: 'Georgia', country: 'USA' },
-  { name: 'Roswell', slug: 'roswell', state: 'Georgia', country: 'USA' },
-  { name: 'Johns Creek', slug: 'johns-creek', state: 'Georgia', country: 'USA' },
-  { name: 'Brookhaven', slug: 'brookhaven', state: 'Georgia', country: 'USA' },
-  { name: 'Sandy Springs', slug: 'sandy-springs', state: 'Georgia', country: 'USA' },
-  { name: 'Nashville', slug: 'nashville', state: 'Tennessee', country: 'USA' }
+  { name: 'Jammu', slug: 'jammu', state: 'Jammu & Kashmir', country: 'India' }
 ];
 
 export const locationsData = {
@@ -104,7 +95,7 @@ export const locationsData = {
     country: "India",
     heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
     heroTitle: "Real Estate in Ludhiana",
-    heroSubtitle: "Your vision, beautifully executed in Ludhiana. Prestigious sprawling bungalows, prime high-street retail, and industrial park investments.",
+    heroSubtitle: "Your vision, beautifully executed in Ludhiana. Sprawling mansions, prime high-street retail, and industrial park investments.",
     overviewTitle: "Our Advisory Services in Ludhiana",
     overviewParagraphs: [
       "As Punjab's wealthiest industrial and commercial capital, Ludhiana has a thriving luxury residential market and robust demand for Grade-A commercial real estate. Adroit Real Estate Services advises top business families, industrialists, and NRIs.",
@@ -446,131 +437,8 @@ export const locationsData = {
       "Transit Corridor Logistics & Warehouses",
       "Prime Commercial Retail Developments"
     ]
-  },
-
-  // ── USA LOCATIONS (RETAINED) ──
-  "atlanta": {
-    name: "Atlanta",
-    slug: "atlanta",
-    state: "Georgia",
-    country: "USA",
-    heroImage: "https://images.unsplash.com/photo-1575917649705-5b59aaa12e6b?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Atlanta",
-    heroSubtitle: "Your vision, beautifully executed in Atlanta. Luxury residential acquisitions, premium commercial properties, and bespoke investment advisory.",
-    overviewTitle: "Our Advisory Services in Atlanta",
-    overviewParagraphs: [
-      "Securing prime real estate in Atlanta demands deep market intelligence and a tailored advisory approach. As a premier consulting practice, Adroit Real Estate Services provides end-to-end guidance for high-net-worth investors and discerning buyers seeking iconic residential estates, high-yield commercial assets, and strategic developments in Atlanta's most prestigious corridors.",
-      "Whether you are acquiring a luxury private residence in Buckhead or Midtown, seeking prime commercial property in the central business district, or structuring cross-border real estate portfolios, our seasoned advisors provide rigorous due diligence, bespoke market valuations, and discreet execution from inception to closing.",
-      "Our comprehensive suite covers institutional investment advisory, high-end residential acquisitions, commercial leasing, and asset preservation. We ensure every transaction aligns with your long-term wealth preservation and growth objectives."
-    ],
-    curateBullets: [
-      "Luxury Residential Estates",
-      "Prime Commercial Assets",
-      "Bespoke Investment Advisory"
-    ]
-  },
-  "roswell": {
-    name: "Roswell",
-    slug: "roswell",
-    state: "Georgia",
-    country: "USA",
-    heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Roswell",
-    heroSubtitle: "Your vision, beautifully executed in Roswell. Historic luxury properties, riverside estates, and high-yield commercial advisory.",
-    overviewTitle: "Our Advisory Services in Roswell",
-    overviewParagraphs: [
-      "Renowned for its historic charm, lush greenways along the Chattahoochee River, and upscale community life, Roswell is a premier destination for luxury living. Adroit Real Estate Services provides high-touch advisory for high-net-worth buyers and property owners.",
-      "From bespoke custom homes in Canton Street's surrounding enclaves to boutique commercial investments and executive office suites, our advisory practice combines deep micro-market knowledge with white-glove client service.",
-      "We assist clients with strategic property acquisitions, meticulous property management, and private portfolio advisory, ensuring your real estate decisions in Roswell deliver enduring value."
-    ],
-    curateBullets: [
-      "Historic & Riverside Estates",
-      "Boutique Commercial Assets",
-      "White-Glove Portfolio Advisory"
-    ]
-  },
-  "johns-creek": {
-    name: "Johns Creek",
-    slug: "johns-creek",
-    state: "Georgia",
-    country: "USA",
-    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Johns Creek",
-    heroSubtitle: "Your vision, beautifully executed in Johns Creek. Premier gated country club estates, top-ranked school districts, and high-end commercial centers.",
-    overviewTitle: "Our Advisory Services in Johns Creek",
-    overviewParagraphs: [
-      "Ranked among Georgia's most affluent and safest cities, Johns Creek offers world-renowned gated golf communities, exceptional schools, and a thriving healthcare corridor. Adroit Real Estate Services delivers executive representation in North Fulton.",
-      "We represent luxury estates in prestigious communities like St Ives Country Club, Country Club of the South, and Rivermont, along with prime medical and commercial office assets.",
-      "Our team provides comprehensive market comparisons, negotiation acumen, and white-glove transaction support for a seamless acquisition experience."
-    ],
-    curateBullets: [
-      "Country Club of the South Living",
-      "St Ives Gated Golf Residences",
-      "MedTech & Professional Commercial"
-    ]
-  },
-  "brookhaven": {
-    name: "Brookhaven",
-    slug: "brookhaven",
-    state: "Georgia",
-    country: "USA",
-    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Brookhaven",
-    heroSubtitle: "Your vision, beautifully executed in Brookhaven. Prestigious luxury estates, country club residences, and upscale commercial corridors.",
-    overviewTitle: "Our Advisory Services in Brookhaven",
-    overviewParagraphs: [
-      "Brookhaven is one of Metro Atlanta's most coveted residential cities, known for its historic country club neighborhoods, lush parks, and proximity to Buckhead. Adroit Real Estate Services provides discreet, top-tier representation for luxury homebuyers and investors.",
-      "From custom architectural builds near Capital City Club to upscale mixed-use developments along Peachtree Road, our advisors deliver unmatched market intelligence and contract negotiation.",
-      "We offer complete portfolio oversight, leasing coordination, and strategic investment guidance tailored to high-net-worth expectations."
-    ],
-    curateBullets: [
-      "Country Club Luxury Homes",
-      "Peachtree Corridor Commercial",
-      "Private Wealth Asset Advisory"
-    ]
-  },
-  "sandy-springs": {
-    name: "Sandy Springs",
-    slug: "sandy-springs",
-    state: "Georgia",
-    country: "USA",
-    heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Sandy Springs",
-    heroSubtitle: "Your vision, beautifully executed in Sandy Springs. Riverfront luxury estates, Fortune 500 office headquarters, and premier residential living.",
-    overviewTitle: "Our Advisory Services in Sandy Springs",
-    overviewParagraphs: [
-      "As a major economic engine of the Southeast, Sandy Springs is home to corporate headquarters, world-class healthcare centers, and secluded luxury riverside estates. Adroit Real Estate Services delivers executive-level advisory in this elite market.",
-      "We advise high-net-worth clients on acquiring gated estates along the Chattahoochee River, high-rise luxury condominiums near City Springs, and premier commercial office assets in the Central Perimeter district.",
-      "Our bespoke approach ensures total confidentiality, unmatched market access, and strategic portfolio structuring."
-    ],
-    curateBullets: [
-      "Riverfront Gated Estates",
-      "Perimeter Commercial Headquarters",
-      "Executive Condominium Advisory"
-    ]
-  },
-  "nashville": {
-    name: "Nashville",
-    slug: "nashville",
-    state: "Tennessee",
-    country: "USA",
-    heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Nashville",
-    heroSubtitle: "Your vision, beautifully executed in Nashville. Iconic luxury high-rises, historic Belle Meade estates, and booming commercial developments.",
-    overviewTitle: "Our Advisory Services in Nashville",
-    overviewParagraphs: [
-      "Nashville has emerged as one of the nation's most dynamic economic and real estate powerhouses, driven by healthcare, entertainment, and corporate migrations. Adroit Real Estate Services provides institutional-grade consulting in Music City.",
-      "From ultra-luxury penthouses in The Gulch and Green Hills to sprawling historic estates in Belle Meade and Williamson County, our advisors deliver unrivaled market access and transaction expertise.",
-      "We advise private investors and institutions on high-yield commercial assets, hospitality ventures, and residential developments across Greater Nashville."
-    ],
-    curateBullets: [
-      "Urban Luxury Penthouses",
-      "Belle Meade & Williamson Estates",
-      "Commercial & Hospitality Assets"
-    ]
   }
 };
 
 // Alias for spelling variations
 locationsData["jaiselmer"] = locationsData["jaisalmer"];
-

@@ -23,7 +23,7 @@ const LocationDetail = () => {
     name: '',
     email: '',
     phone: '',
-    country: 'United States',
+    country: 'India',
     city: '',
     serviceType: 'Luxury Residential',
     timeline: '',
@@ -37,7 +37,7 @@ const LocationDetail = () => {
       setForm(prev => ({
         ...prev,
         city: location.name,
-        country: location.country === 'USA' ? 'United States' : 'India'
+        country: 'India'
       }));
     }
   }, [slug, location]);
@@ -60,7 +60,7 @@ const LocationDetail = () => {
       name: '',
       email: '',
       phone: '',
-      country: 'United States',
+      country: 'India',
       city: location.name,
       serviceType: 'Luxury Residential',
       timeline: '',
@@ -320,7 +320,7 @@ const LocationDetail = () => {
                         value={form.phone}
                         onChange={handleChange}
                         required
-                        placeholder="+1 (555) 000-0000 / +91 99992 67833"
+                        placeholder="+91 99992 67833"
                         className="px-4 py-3.5 rounded-xl bg-zinc-50 border border-zinc-200 text-zinc-900 text-sm focus:outline-none focus:border-brand-orange focus:bg-white transition-all"
                       />
                     </div>
@@ -334,7 +334,7 @@ const LocationDetail = () => {
                           name="country"
                           value={form.country}
                           onChange={handleChange}
-                          placeholder="United States / India"
+                          placeholder="India"
                           className="px-4 py-3.5 rounded-xl bg-zinc-50 border border-zinc-200 text-zinc-900 text-sm focus:outline-none focus:border-brand-orange focus:bg-white transition-all"
                         />
                       </div>
