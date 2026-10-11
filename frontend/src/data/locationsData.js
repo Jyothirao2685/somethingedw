@@ -1,38 +1,463 @@
 export const locationsList = [
-  { name: 'Atlanta', slug: 'atlanta', state: 'Georgia' },
-  { name: 'Alpharetta', slug: 'alpharetta', state: 'Georgia' },
-  { name: 'Cumming', slug: 'cumming', state: 'Georgia' },
-  { name: 'Roswell', slug: 'roswell', state: 'Georgia' },
-  { name: 'Savannah', slug: 'savannah', state: 'Georgia' },
-  { name: 'Alabama', slug: 'alabama', state: 'Regional' },
-  { name: 'Decatur', slug: 'decatur', state: 'Georgia' },
-  { name: 'Powder Springs', slug: 'powder-springs', state: 'Georgia' },
-  { name: 'Brookhaven', slug: 'brookhaven', state: 'Georgia' },
-  { name: 'Kennesaw', slug: 'kennesaw', state: 'Georgia' },
-  { name: 'Woodstock', slug: 'woodstock', state: 'Georgia' },
-  { name: 'Norcross', slug: 'norcross', state: 'Georgia' },
-  { name: 'Sandy Springs', slug: 'sandy-springs', state: 'Georgia' },
-  { name: 'Vinings', slug: 'vinings', state: 'Georgia' },
-  { name: 'East Cobb', slug: 'east-cobb', state: 'Georgia' },
-  { name: 'Nashville', slug: 'nashville', state: 'Tennessee' },
-  { name: 'Tennessee', slug: 'tennessee', state: 'Regional' },
-  { name: 'Rome', slug: 'rome', state: 'Georgia' },
-  { name: 'Birmingham', slug: 'birmingham', state: 'Alabama' },
-  { name: 'Sugar Hill', slug: 'sugar-hill', state: 'Georgia' },
-  { name: 'Milton', slug: 'milton', state: 'Georgia' },
-  { name: 'Suwanee', slug: 'suwanee', state: 'Georgia' },
-  { name: 'Dawsonville', slug: 'dawsonville', state: 'Georgia' }
+  // 19 India Locations
+  { name: 'Jaipur', slug: 'jaipur', state: 'Rajasthan', country: 'India' },
+  { name: 'Udaipur', slug: 'udaipur', state: 'Rajasthan', country: 'India' },
+  { name: 'Jim Corbett', slug: 'jim-corbett', state: 'Uttarakhand', country: 'India' },
+  { name: 'Ludhiana', slug: 'ludhiana', state: 'Punjab', country: 'India' },
+  { name: 'Amritsar', slug: 'amritsar', state: 'Punjab', country: 'India' },
+  { name: 'Jaisalmer', slug: 'jaisalmer', state: 'Rajasthan', country: 'India' },
+  { name: 'Kasauli', slug: 'kasauli', state: 'Himachal Pradesh', country: 'India' },
+  { name: 'Shimla', slug: 'shimla', state: 'Himachal Pradesh', country: 'India' },
+  { name: 'Mohali', slug: 'mohali', state: 'Punjab', country: 'India' },
+  { name: 'Chandigarh', slug: 'chandigarh', state: 'Tricity', country: 'India' },
+  { name: 'Jalandhar', slug: 'jalandhar', state: 'Punjab', country: 'India' },
+  { name: 'Ambala', slug: 'ambala', state: 'Haryana', country: 'India' },
+  { name: 'Delhi', slug: 'delhi', state: 'Delhi NCR', country: 'India' },
+  { name: 'Gurgaon', slug: 'gurgaon', state: 'Haryana', country: 'India' },
+  { name: 'Noida', slug: 'noida', state: 'Uttar Pradesh', country: 'India' },
+  { name: 'Mumbai', slug: 'mumbai', state: 'Maharashtra', country: 'India' },
+  { name: 'Dwarka', slug: 'dwarka', state: 'Delhi', country: 'India' },
+  { name: 'Agra', slug: 'agra', state: 'Uttar Pradesh', country: 'India' },
+  { name: 'Jammu', slug: 'jammu', state: 'Jammu & Kashmir', country: 'India' },
+
+  // USA Locations
+  { name: 'Atlanta', slug: 'atlanta', state: 'Georgia', country: 'USA' },
+  { name: 'Roswell', slug: 'roswell', state: 'Georgia', country: 'USA' },
+  { name: 'Johns Creek', slug: 'johns-creek', state: 'Georgia', country: 'USA' },
+  { name: 'Brookhaven', slug: 'brookhaven', state: 'Georgia', country: 'USA' },
+  { name: 'Sandy Springs', slug: 'sandy-springs', state: 'Georgia', country: 'USA' },
+  { name: 'Nashville', slug: 'nashville', state: 'Tennessee', country: 'USA' }
 ];
 
 export const locationsData = {
+  // ── 1. JAIPUR ──
+  "jaipur": {
+    name: "Jaipur",
+    slug: "jaipur",
+    state: "Rajasthan",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Jaipur",
+    heroSubtitle: "Your vision, beautifully executed in Jaipur. Regal heritage villas, luxury townhomes, and high-yield commercial hospitality assets.",
+    overviewTitle: "Our Advisory Services in Jaipur",
+    overviewParagraphs: [
+      "Jaipur represents one of India's most dynamic luxury real estate markets, seamlessly uniting royal heritage with modern infrastructure. At Adroit Real Estate Services, we provide institutional-grade advisory for HNIs, royal families, and corporate investors looking to acquire prestigious residential estates and prime commercial assets.",
+      "From heritage havelis and luxury villas in C-Scheme, Civil Lines, and Mansarovar to high-potential hospitality land along the Delhi-Jaipur highway, our team conducts meticulous title verification, zoning due diligence, and valuation modeling.",
+      "Whether you are looking to invest in bespoke residential luxury, boutique resort properties, or high-street commercial developments in Rajasthan's capital, our senior advisors ensure discreet execution and optimal yield."
+    ],
+    curateBullets: [
+      "Heritage Havelis & Royal Villas",
+      "Prime C-Scheme & Civil Lines Homes",
+      "High-Yield Hospitality Assets"
+    ]
+  },
+
+  // ── 2. UDAIPUR ──
+  "udaipur": {
+    name: "Udaipur",
+    slug: "udaipur",
+    state: "Rajasthan",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Udaipur",
+    heroSubtitle: "Your vision, beautifully executed in Udaipur. Exclusive lake-facing estates, luxury resort retreats, and bespoke second-home properties.",
+    overviewTitle: "Our Advisory Services in Udaipur",
+    overviewParagraphs: [
+      "Celebrated globally as the City of Lakes and India's crown jewel for destination luxury, Udaipur commands exceptional real estate value. Adroit Real Estate Services offers discreet representation for buyers seeking trophy lakefront properties and private holiday retreats.",
+      "We specialize in sourcing rare lake-view villas, palatial country estates around Lake Pichola and Fateh Sagar, and high-revenue boutique resort properties catering to high-net-worth global travelers.",
+      "Our team provides comprehensive legal due diligence, environmental and heritage zoning clearance support, and investment feasibility studies to protect and grow your capital in Udaipur."
+    ],
+    curateBullets: [
+      "Lake-Facing Trophy Estates",
+      "Luxury Destination Resorts",
+      "Palatial Second-Home Sanctuaries"
+    ]
+  },
+
+  // ── 3. JIM CORBETT ──
+  "jim-corbett": {
+    name: "Jim Corbett",
+    slug: "jim-corbett",
+    state: "Uttarakhand",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Jim Corbett",
+    heroSubtitle: "Your vision, beautifully executed in Jim Corbett. Wilderness luxury estates, boutique eco-resorts, and high-yield hospitality land.",
+    overviewTitle: "Our Advisory Services in Jim Corbett",
+    overviewParagraphs: [
+      "Nestled along the Kosi River and bordering Asia's oldest national park, Jim Corbett is India's most sought-after wilderness hospitality and luxury retreat corridor. Adroit Real Estate Services provides expert guidance for eco-resort developers and private estate investors.",
+      "We source legally verified resort parcels, river-facing private villas, and revenue-generating forest estates in Ramnagar, Dhikuli, and surrounding scenic zones.",
+      "With specialized expertise in eco-sensitive zoning regulations, tourism hospitality permissions, and land titling, we ensure a seamless and risk-mitigated acquisition process."
+    ],
+    curateBullets: [
+      "Riverfront Wilderness Estates",
+      "Licensed Luxury Eco-Resorts",
+      "High-Occupancy Hospitality Land"
+    ]
+  },
+
+  // ── 4. LUDHIANA ──
+  "ludhiana": {
+    name: "Ludhiana",
+    slug: "ludhiana",
+    state: "Punjab",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Ludhiana",
+    heroSubtitle: "Your vision, beautifully executed in Ludhiana. Prestigious sprawling bungalows, prime high-street retail, and industrial park investments.",
+    overviewTitle: "Our Advisory Services in Ludhiana",
+    overviewParagraphs: [
+      "As Punjab's wealthiest industrial and commercial capital, Ludhiana has a thriving luxury residential market and robust demand for Grade-A commercial real estate. Adroit Real Estate Services advises top business families, industrialists, and NRIs.",
+      "From bespoke multi-acre farmhouses and palatial bungalows in Sarabha Nagar and Civil Lines to prime commercial retail developments on Ferozepur Road, our advisory ensures exceptional market access.",
+      "We provide comprehensive commercial lease structuring, institutional property management, and wealth preservation strategies tailored to Punjab's elite."
+    ],
+    curateBullets: [
+      "Sarabha Nagar & Civil Lines Estates",
+      "Ferozepur Road Retail & Commercial",
+      "High-Yield Industrial Hubs"
+    ]
+  },
+
+  // ── 5. AMRITSAR ──
+  "amritsar": {
+    name: "Amritsar",
+    slug: "amritsar",
+    state: "Punjab",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Amritsar",
+    heroSubtitle: "Your vision, beautifully executed in Amritsar. Prime heritage hospitality, luxury residential enclaves, and Airport Road developments.",
+    overviewTitle: "Our Advisory Services in Amritsar",
+    overviewParagraphs: [
+      "With tens of millions of spiritual and international travelers visiting every year, Amritsar is an extraordinarily high-velocity market for hospitality real estate and luxury living. Adroit Real Estate Services delivers premier consulting for discerning investors.",
+      "We assist clients with acquiring boutique hotels near the Golden Temple heritage corridor, luxury residential properties in Ranjit Avenue and Mall Road, and expanding commercial projects along the International Airport Road.",
+      "Our advisory ensures strict title scrutiny, RERA compliance, and strategic positioning to capture long-term appreciation and rental yields."
+    ],
+    curateBullets: [
+      "Heritage Hospitality Assets",
+      "Ranjit Avenue Luxury Residences",
+      "Airport Road Commercial Parks"
+    ]
+  },
+
+  // ── 6. JAISALMER ──
+  "jaisalmer": {
+    name: "Jaisalmer",
+    slug: "jaisalmer",
+    state: "Rajasthan",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Jaisalmer",
+    heroSubtitle: "Your vision, beautifully executed in Jaisalmer. Golden stone heritage havelis, luxury desert glamping resorts, and strategic land parcels.",
+    overviewTitle: "Our Advisory Services in Jaisalmer",
+    overviewParagraphs: [
+      "The Golden City of Jaisalmer offers unprecedented allure for luxury tourism, desert retreats, and high-return renewable infrastructure developments. Adroit Real Estate Services provides white-glove consulting across Western Rajasthan.",
+      "We specialize in verified heritage havelis carved from iconic yellow sandstone, high-end tented safari resorts near Sam Sand Dunes, and strategic land investments across prime tourism belts.",
+      "Our team provides comprehensive diligence on revenue land status, local municipal clearances, and long-term tourism lease structures."
+    ],
+    curateBullets: [
+      "Golden Stone Heritage Havelis",
+      "Sam Sand Dunes Luxury Resorts",
+      "Strategic Tourism Land Parcels"
+    ]
+  },
+
+  // ── 7. KASAULI ──
+  "kasauli": {
+    name: "Kasauli",
+    slug: "kasauli",
+    state: "Himachal Pradesh",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Kasauli",
+    heroSubtitle: "Your vision, beautifully executed in Kasauli. Pine-clad colonial hill cottages, ultra-luxury second homes, and boutique wellness resorts.",
+    overviewTitle: "Our Advisory Services in Kasauli",
+    overviewParagraphs: [
+      "Positioned just a short drive from Chandigarh and Delhi NCR, Kasauli is the premier destination for private mountain sanctuaries and luxury hill living. Adroit Real Estate Services advises high-profile executives and UHNW families on second-home acquisitions.",
+      "We represent exquisite pine-surrounded villas, secluded colonial cottages in upper Kasauli, and premier boutique wellness resort sites.",
+      "Navigating Himachal Pradesh Section 118 permissions requires deep legal expertise; our seasoned legal and advisory team ensures 100% regulatory compliance and secure ownership transfers."
+    ],
+    curateBullets: [
+      "Pine-Clad Alpine Cottages",
+      "Section 118 Compliant Luxury Villas",
+      "Boutique Mountain Wellness Retreats"
+    ]
+  },
+
+  // ── 8. SHIMLA ──
+  "shimla": {
+    name: "Shimla",
+    slug: "shimla",
+    state: "Himachal Pradesh",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Shimla",
+    heroSubtitle: "Your vision, beautifully executed in Shimla. Historic British-era chalets, luxury alpine residences, and scenic hospitality retreats.",
+    overviewTitle: "Our Advisory Services in Shimla",
+    overviewParagraphs: [
+      "As the historic summer capital of India, Shimla commands unmatched prestige for heritage properties and serene Himalayan retreats. Adroit Real Estate Services provides high-touch representation for luxury buyers and institutional investors.",
+      "From secluded cedar-wood chalets in Mashobra and Kufri to luxury boutique hotels with panoramic Himalayan views, our portfolio delivers exceptional privacy and capital appreciation.",
+      "We manage every phase of property acquisition with strict adherence to state land regulations, heritage conservation guidelines, and structural integrity assessments."
+    ],
+    curateBullets: [
+      "Mashobra & Kufri Luxury Chalets",
+      "Colonial Heritage Mountain Estates",
+      "Panoramic Himalayan View Retreats"
+    ]
+  },
+
+  // ── 9. MOHALI ──
+  "mohali": {
+    name: "Mohali",
+    slug: "mohali",
+    state: "Punjab",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Mohali",
+    heroSubtitle: "Your vision, beautifully executed in Mohali. Landmark Airport Road penthouses, Grade-A commercial towers, and mixed-use luxury developments.",
+    overviewTitle: "Our Advisory Services in Mohali",
+    overviewParagraphs: [
+      "Mohali is the fastest-growing commercial and luxury residential epicenter of Northern India, anchored by the International Airport Road, Aerocity, and major IT corridors. Adroit Real Estate Services is a definitive authority in Mohali's premier developments.",
+      "We represent landmark projects including Homeland Regalia, Unity Homeland CP 67, and Homeland Global Park, offering institutional office spaces, branded retail, and hyper-luxury sky penthouses.",
+      "Whether structuring pre-leased corporate investments with assured yields or acquiring trophy residential residences, our advisory delivers unparalleled market access."
+    ],
+    curateBullets: [
+      "International Airport Road Towers",
+      "Unity Homeland CP 67 Commercial",
+      "Hyper-Luxury Sky Penthouses"
+    ]
+  },
+
+  // ── 10. CHANDIGARH ──
+  "chandigarh": {
+    name: "Chandigarh",
+    slug: "chandigarh",
+    state: "Tricity",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Chandigarh",
+    heroSubtitle: "Your vision, beautifully executed in Chandigarh. Architectural sector bungalows, prime corporate office suites, and ultra-luxury residences.",
+    overviewTitle: "Our Advisory Services in Chandigarh",
+    overviewParagraphs: [
+      "Celebrated as Le Corbusier's architectural masterpiece, Chandigarh offers the highest standard of urban living and scarce prime land. Adroit Real Estate Services caters to elite industrialists, NRIs, and senior bureaucrats seeking landmark addresses.",
+      "We specialize in private luxury bungalows in elite northern sectors (Sectors 4, 5, 8, 9, 10, 11) and premium commercial office buildings along Madhya Marg and Sector 17.",
+      "Our team provides absolute discretion, exhaustive title scrutiny, and precise valuation assessments for multi-generational wealth preservation."
+    ],
+    curateBullets: [
+      "North Sector Luxury Bungalows",
+      "Madhya Marg Grade-A Offices",
+      "Trophy Heritage Real Estate"
+    ]
+  },
+
+  // ── 11. JALANDHAR ──
+  "jalandhar": {
+    name: "Jalandhar",
+    slug: "jalandhar",
+    state: "Punjab",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Jalandhar",
+    heroSubtitle: "Your vision, beautifully executed in Jalandhar. Model Town luxury residences, high-street retail hubs, and comprehensive NRI advisory.",
+    overviewTitle: "Our Advisory Services in Jalandhar",
+    overviewParagraphs: [
+      "Jalandhar is a vibrant commercial and NRI financial hub known for its prosperous diaspora and prominent manufacturing economy. Adroit Real Estate Services serves as the premier bridge for NRIs and local business leaders managing high-value assets.",
+      "We advise on luxury private homes in Model Town, Urban Estate, and Defence Colony, as well as high-traffic commercial retail storefronts along GT Road and Model Town Market.",
+      "Our specialized NRI Investment division provides complete remote portfolio oversight, legal power of attorney coordination, and tax compliance (FEMA/RERA)."
+    ],
+    curateBullets: [
+      "Model Town Bespoke Mansions",
+      "GT Road High-Street Retail",
+      "Dedicated NRI Portfolio Advisory"
+    ]
+  },
+
+  // ── 12. AMBALA ──
+  "ambala": {
+    name: "Ambala",
+    slug: "ambala",
+    state: "Haryana",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Ambala",
+    heroSubtitle: "Your vision, beautifully executed in Ambala. Strategic transit commercial hubs, prime highway logistics, and executive residential properties.",
+    overviewTitle: "Our Advisory Services in Ambala",
+    overviewParagraphs: [
+      "Ambala's strategic position as the primary junction connecting Delhi, Punjab, Himachal Pradesh, and Chandigarh makes it an indispensable commercial and logistics hub. Adroit Real Estate Services delivers high-conviction investment advice.",
+      "We advise on commercial wholesale markets, modern retail complexes along the national highway, and planned residential colonies in Ambala Cantt and City.",
+      "Our advisors provide data-driven market analyses, developer vetting, and streamlined acquisition management for institutional and private capital."
+    ],
+    curateBullets: [
+      "Strategic GT Road Commercial",
+      "Logistics & Warehousing Corridors",
+      "Executive Residential Communities"
+    ]
+  },
+
+  // ── 13. DELHI ──
+  "delhi": {
+    name: "Delhi",
+    slug: "delhi",
+    state: "Delhi NCR",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Delhi",
+    heroSubtitle: "Your vision, beautifully executed in Delhi. Ultra-luxury South Delhi builder floors, Lutyens bungalows, and iconic commercial landmarks.",
+    overviewTitle: "Our Advisory Services in Delhi",
+    overviewParagraphs: [
+      "The National Capital hosts India's most coveted and valuable real estate, characterized by exclusive colonial enclaves, diplomatic quarters, and ultra-prime South Delhi neighborhoods. Adroit Real Estate Services is a trusted authority for institutional and HNWI transactions.",
+      "We specialize in bespoke luxury builder floors and standalone bungalows across Vasant Vihar, Shanti Niketan, Golf Links, Jor Bagh, Greater Kailash, and Panchsheel Park, alongside institutional Grade-A offices in Central and South Delhi.",
+      "Our seasoned advisors deliver unmatched title diligence, municipal sanction verification, and discreet off-market transactions tailored to discerning families and wealth managers."
+    ],
+    curateBullets: [
+      "South Delhi Luxury Builder Floors",
+      "Lutyens & Diplomatic Enclaves",
+      "Institutional Grade-A Commercial"
+    ]
+  },
+
+  // ── 14. GURGAON ──
+  "gurgaon": {
+    name: "Gurgaon",
+    slug: "gurgaon",
+    state: "Haryana",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Gurgaon",
+    heroSubtitle: "Your vision, beautifully executed in Gurgaon. Trophy Golf Course Road penthouses, DLF super-luxury towers, and corporate headquarters.",
+    overviewTitle: "Our Advisory Services in Gurgaon",
+    overviewParagraphs: [
+      "Gurgaon is the financial and corporate nerve center of Northern India, boasting world-class infrastructure and India's highest concentration of super-luxury residences. Adroit Real Estate Services operates at the pinnacle of this market.",
+      "From trophy residences in DLF The Camellias, DLF The Arbour, BPTP Downtown 66, and Godrej Miraya to Grade-A commercial office parks like AIPL Autograph, we offer institutional-grade advisory.",
+      "We provide comprehensive asset evaluation, builder background vetting, RERA validation, and negotiation strategies to help you secure unmatched real estate value."
+    ],
+    curateBullets: [
+      "Golf Course Road Super-Luxury",
+      "DLF & Godrej Flagship Residences",
+      "Fortune 500 Grade-A Commercial"
+    ]
+  },
+
+  // ── 15. NOIDA ──
+  "noida": {
+    name: "Noida",
+    slug: "noida",
+    state: "Uttar Pradesh",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Noida",
+    heroSubtitle: "Your vision, beautifully executed in Noida. Expressway golf residences, corporate tech campuses, and Jewar Airport investment corridors.",
+    overviewTitle: "Our Advisory Services in Noida",
+    overviewParagraphs: [
+      "With the emergence of the Noida International Airport at Jewar, the Film City, and major data center parks, Noida and Greater Noida are experiencing exponential capital appreciation. Adroit Real Estate Services delivers forward-looking investment solutions.",
+      "We represent luxury golf residences along the Noida-Greater Noida Expressway (Sectors 128, 150), mixed-use commercial developments, and large-scale industrial parcels.",
+      "Our team conducts rigorous regulatory reviews, lease yield modeling, and exit strategy planning for high-net-worth investors and corporations."
+    ],
+    curateBullets: [
+      "Expressway Golf Course Living",
+      "Jewar Airport Corridor Growth",
+      "Institutional Tech & Data Parks"
+    ]
+  },
+
+  // ── 16. MUMBAI ──
+  "mumbai": {
+    name: "Mumbai",
+    slug: "mumbai",
+    state: "Maharashtra",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Mumbai",
+    heroSubtitle: "Your vision, beautifully executed in Mumbai. Sea-facing South Mumbai penthouses, Bandra celebrity enclaves, and BKC financial offices.",
+    overviewTitle: "Our Advisory Services in Mumbai",
+    overviewParagraphs: [
+      "As India's financial capital and the undisputed center of corporate headquarters, Mumbai represents the pinnacle of luxury residential and commercial prestige. Adroit Real Estate Services provides bespoke advisory for the country's most discerning investors.",
+      "We advise on trophy sea-facing penthouses in Worli, Malabar Hill, and Bandra West, alongside Grade-A commercial acquisitions in Bandra-Kurla Complex (BKC) and Lower Parel.",
+      "Our advisors ensure total discretion, thorough redevelopment diligence, and customized asset structuring for institutional and private clients."
+    ],
+    curateBullets: [
+      "Worli & South Mumbai Sea-Facing Penthouses",
+      "Bandra-Kurla Complex (BKC) Offices",
+      "Prime Bandra & Juhu Luxury Residences"
+    ]
+  },
+
+  // ── 17. DWARKA ──
+  "dwarka": {
+    name: "Dwarka",
+    slug: "dwarka",
+    state: "Delhi",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Dwarka",
+    heroSubtitle: "Your vision, beautifully executed in Dwarka. Diplomatic Enclave II residences, Dwarka Expressway luxury towers, and transit hubs.",
+    overviewTitle: "Our Advisory Services in Dwarka",
+    overviewParagraphs: [
+      "Dwarka is undergoing a transformative renaissance, propelled by Diplomatic Enclave II, Bharat Vandana Park, the Yashobhoomi Convention Center, and the operational Dwarka Expressway. Adroit Real Estate Services guides high-net-worth buyers in this high-growth submarket.",
+      "We specialize in luxury high-rises on the Dwarka Expressway (such as BPTP Amstoria Verti Greens), smart diplomatic housing, and premium commercial retail hubs.",
+      "Our advisory ensures early entry into master-planned developments with verified legal frameworks and exceptional appreciation potential."
+    ],
+    curateBullets: [
+      "Diplomatic Enclave II Living",
+      "Dwarka Expressway Luxury Corridors",
+      "Yashobhoomi Commercial & Retail"
+    ]
+  },
+
+  // ── 18. AGRA ──
+  "agra": {
+    name: "Agra",
+    slug: "agra",
+    state: "Uttar Pradesh",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Agra",
+    heroSubtitle: "Your vision, beautifully executed in Agra. Prime heritage hospitality assets, luxury gated townships, and Fatehabad Road commercial spaces.",
+    overviewTitle: "Our Advisory Services in Agra",
+    overviewParagraphs: [
+      "As an internationally renowned global heritage tourism city connected by world-class expressways to Delhi and Lucknow, Agra offers exceptional hospitality and residential investment potential. Adroit Real Estate Services delivers executive consulting across Agra.",
+      "We advise on luxury hotel developments along Fatehabad Road, premium gated residential communities, and commercial retail malls serving millions of domestic and international visitors.",
+      "Our team provides comprehensive zoning clearances, tourism feasibility analysis, and full transaction support from initial vetting to closing."
+    ],
+    curateBullets: [
+      "Fatehabad Road Hospitality Land",
+      "Luxury Gated Townships",
+      "Heritage Tourism Commercial Assets"
+    ]
+  },
+
+  // ── 19. JAMMU ──
+  "jammu": {
+    name: "Jammu",
+    slug: "jammu",
+    state: "Jammu & Kashmir",
+    country: "India",
+    heroImage: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Jammu",
+    heroSubtitle: "Your vision, beautifully executed in Jammu. Gandhi Nagar luxury residences, highway commercial retail, and regional logistics corridors.",
+    overviewTitle: "Our Advisory Services in Jammu",
+    overviewParagraphs: [
+      "Jammu serves as the key administrative and economic gateway to Jammu & Kashmir, benefiting from rapid infrastructure investments, new expressway links, and expanding industrial zones. Adroit Real Estate Services advises corporate and private investors.",
+      "We source prime residential properties in Gandhi Nagar, Channi Himmat, and Greater Kailash, alongside commercial retail complexes and logistics warehousing along national transit corridors.",
+      "Our advisory team delivers complete regulatory compliance, title vetting, and valuation guidance to secure high-performing real estate assets in the region."
+    ],
+    curateBullets: [
+      "Gandhi Nagar & Channi Himmat Residences",
+      "Transit Corridor Logistics & Warehouses",
+      "Prime Commercial Retail Developments"
+    ]
+  },
+
+  // ── USA LOCATIONS (RETAINED) ──
   "atlanta": {
     name: "Atlanta",
     slug: "atlanta",
     state: "Georgia",
+    country: "USA",
     heroImage: "https://images.unsplash.com/photo-1575917649705-5b59aaa12e6b?auto=format&fit=crop&q=80",
     heroTitle: "Real Estate in Atlanta",
     heroSubtitle: "Your vision, beautifully executed in Atlanta. Luxury residential acquisitions, premium commercial properties, and bespoke investment advisory.",
-    overviewTitle: "Our Services in Atlanta",
+    overviewTitle: "Our Advisory Services in Atlanta",
     overviewParagraphs: [
       "Securing prime real estate in Atlanta demands deep market intelligence and a tailored advisory approach. As a premier consulting practice, Adroit Real Estate Services provides end-to-end guidance for high-net-worth investors and discerning buyers seeking iconic residential estates, high-yield commercial assets, and strategic developments in Atlanta's most prestigious corridors.",
       "Whether you are acquiring a luxury private residence in Buckhead or Midtown, seeking prime commercial property in the central business district, or structuring cross-border real estate portfolios, our seasoned advisors provide rigorous due diligence, bespoke market valuations, and discreet execution from inception to closing.",
@@ -44,52 +469,15 @@ export const locationsData = {
       "Bespoke Investment Advisory"
     ]
   },
-  "alpharetta": {
-    name: "Alpharetta",
-    slug: "alpharetta",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Alpharetta",
-    heroSubtitle: "Your vision, beautifully executed in Alpharetta. Exclusive luxury estates, prime mixed-use commercial properties, and strategic wealth advisory.",
-    overviewTitle: "Our Services in Alpharetta",
-    overviewParagraphs: [
-      "Alpharetta represents one of the most vibrant luxury and technology corridors in the region. At Adroit Real Estate Services, we deliver institutional-grade representation and advisory for buyers, sellers, and corporate entities looking to capitalize on Alpharetta's premier developments and master-planned communities.",
-      "From prestigious gated estates near Avalon and the downtown historic district to high-performing commercial spaces and technology office parks, our advisory team brings unmatched market precision, discreet representation, and rigorous legal due diligence to every transaction.",
-      "We partner with high-net-worth individuals, family offices, and corporations to curate high-yield real estate portfolios, manage high-end assets, and facilitate seamless acquisitions tailored to your distinctive standards."
-    ],
-    curateBullets: [
-      "Gated Luxury Residences",
-      "Corporate & Tech Office Spaces",
-      "Strategic Asset Management"
-    ]
-  },
-  "cumming": {
-    name: "Cumming",
-    slug: "cumming",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Cumming",
-    heroSubtitle: "Your vision, beautifully executed in Cumming. Lakefront luxury estates, master-planned developments, and prime commercial investments.",
-    overviewTitle: "Our Services in Cumming",
-    overviewParagraphs: [
-      "Cumming offers a distinguished blend of natural serenity, Lake Lanier waterfront living, and thriving commercial expansion. Adroit Real Estate Services provides comprehensive advisory services for investors and homeowners seeking high-value real estate opportunities in Forsyth County.",
-      "Whether you are acquiring a luxury waterfront retreat, developing prime residential acreage, or seeking strategically located commercial storefronts along key transit arteries, our team provides data-backed valuation intelligence and rigorous contract structuring.",
-      "With a commitment to transparency, discretion, and financial acumen, we guide you through every phase of property acquisition, portfolio diversification, and long-term asset optimization in Cumming."
-    ],
-    curateBullets: [
-      "Waterfront & Lake Estates",
-      "Master-Planned Communities",
-      "Commercial Growth Corridors"
-    ]
-  },
   "roswell": {
     name: "Roswell",
     slug: "roswell",
     state: "Georgia",
+    country: "USA",
     heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80",
     heroTitle: "Real Estate in Roswell",
     heroSubtitle: "Your vision, beautifully executed in Roswell. Historic luxury properties, riverside estates, and high-yield commercial advisory.",
-    overviewTitle: "Our Services in Roswell",
+    overviewTitle: "Our Advisory Services in Roswell",
     overviewParagraphs: [
       "Renowned for its historic charm, lush greenways along the Chattahoochee River, and upscale community life, Roswell is a premier destination for luxury living. Adroit Real Estate Services provides high-touch advisory for high-net-worth buyers and property owners.",
       "From bespoke custom homes in Canton Street's surrounding enclaves to boutique commercial investments and executive office suites, our advisory practice combines deep micro-market knowledge with white-glove client service.",
@@ -101,90 +489,35 @@ export const locationsData = {
       "White-Glove Portfolio Advisory"
     ]
   },
-  "savannah": {
-    name: "Savannah",
-    slug: "savannah",
+  "johns-creek": {
+    name: "Johns Creek",
+    slug: "johns-creek",
     state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Savannah",
-    heroSubtitle: "Your vision, beautifully executed in Savannah. Historic architectural landmarks, coastal luxury estates, and prime hospitality assets.",
-    overviewTitle: "Our Services in Savannah",
+    country: "USA",
+    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
+    heroTitle: "Real Estate in Johns Creek",
+    heroSubtitle: "Your vision, beautifully executed in Johns Creek. Premier gated country club estates, top-ranked school districts, and high-end commercial centers.",
+    overviewTitle: "Our Advisory Services in Johns Creek",
     overviewParagraphs: [
-      "Savannah stands as an iconic coastal market celebrated for its historic squares, antebellum architecture, and thriving port logistics economy. Adroit Real Estate Services delivers institutional-grade real estate consulting across Savannah's prime historic and coastal waterfront districts.",
-      "We assist private investors and institutional capital in acquiring historic residential townhomes, luxury coastal retreats in surrounding islands, and high-performing hospitality and commercial logistics assets.",
-      "Our team provides comprehensive market analysis, zoning and historic preservation guidance, and end-to-end transaction management to help you maximize your real estate holdings in Savannah."
+      "Ranked among Georgia's most affluent and safest cities, Johns Creek offers world-renowned gated golf communities, exceptional schools, and a thriving healthcare corridor. Adroit Real Estate Services delivers executive representation in North Fulton.",
+      "We represent luxury estates in prestigious communities like St Ives Country Club, Country Club of the South, and Rivermont, along with prime medical and commercial office assets.",
+      "Our team provides comprehensive market comparisons, negotiation acumen, and white-glove transaction support for a seamless acquisition experience."
     ],
     curateBullets: [
-      "Historic Landmark Townhomes",
-      "Coastal & Island Residences",
-      "Hospitality & Commercial Assets"
-    ]
-  },
-  "alabama": {
-    name: "Alabama",
-    slug: "alabama",
-    state: "Regional",
-    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Alabama",
-    heroSubtitle: "Your vision, beautifully executed across Alabama. High-yield commercial assets, industrial developments, and premier residential properties.",
-    overviewTitle: "Our Services in Alabama",
-    overviewParagraphs: [
-      "Alabama's dynamic economic landscape—spanning industrial manufacturing hubs, aerospace centers, and thriving regional metros—creates compelling opportunities for real estate investors. Adroit Real Estate Services delivers strategic advisory across the state.",
-      "We specialize in identifying prime commercial real estate, logistics hubs, and high-demand residential communities in major metropolitan centers including Birmingham, Huntsville, and Mobile.",
-      "Our dedicated advisory team works closely with family offices, private investors, and developers to navigate acquisitions, structure advantageous leasing agreements, and execute seamless property divestments."
-    ],
-    curateBullets: [
-      "Regional Commercial Hubs",
-      "Industrial & Logistics Parks",
-      "High-Yield Residential Portfolios"
-    ]
-  },
-  "decatur": {
-    name: "Decatur",
-    slug: "decatur",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Decatur",
-    heroSubtitle: "Your vision, beautifully executed in Decatur. Vibrant urban living, craftsman luxury homes, and premium neighborhood commercial spaces.",
-    overviewTitle: "Our Services in Decatur",
-    overviewParagraphs: [
-      "Decatur is celebrated for its walkable downtown square, top-rated school districts, and thriving cultural scene. Adroit Real Estate Services provides specialized consulting for homeowners and investors seeking prime opportunities in this high-demand urban-suburban hub.",
-      "From historic craftsman renovations and modern architectural builds to boutique retail storefronts near Decatur Square, our advisory team delivers thorough valuation insights and negotiation expertise.",
-      "We ensure your real estate investments in Decatur are backed by data, strict legal due diligence, and tailored growth strategies."
-    ],
-    curateBullets: [
-      "Urban Luxury Residences",
-      "Walkable Mixed-Use Commercial",
-      "Strategic Urban Acquisitions"
-    ]
-  },
-  "powder-springs": {
-    name: "Powder Springs",
-    slug: "powder-springs",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Powder Springs",
-    heroSubtitle: "Your vision, beautifully executed in Powder Springs. Expansive residential estates, emerging commercial nodes, and prime land development.",
-    overviewTitle: "Our Services in Powder Springs",
-    overviewParagraphs: [
-      "Situated in Cobb County, Powder Springs combines suburban peace, spacious private properties, and rapid infrastructure expansion. Adroit Real Estate Services provides comprehensive advisory for residential buyers and commercial developers.",
-      "Our team identifies prime residential parcels, family estates, and high-potential commercial retail spaces along growing transportation corridors.",
-      "We guide clients through every stage of acquisition, zoning analysis, and property management to ensure optimal capital appreciation and stability."
-    ],
-    curateBullets: [
-      "Spacious Family Estates",
-      "Suburban Land Development",
-      "Retail & Commercial Nodes"
+      "Country Club of the South Living",
+      "St Ives Gated Golf Residences",
+      "MedTech & Professional Commercial"
     ]
   },
   "brookhaven": {
     name: "Brookhaven",
     slug: "brookhaven",
     state: "Georgia",
+    country: "USA",
     heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
     heroTitle: "Real Estate in Brookhaven",
     heroSubtitle: "Your vision, beautifully executed in Brookhaven. Prestigious luxury estates, country club residences, and upscale commercial corridors.",
-    overviewTitle: "Our Services in Brookhaven",
+    overviewTitle: "Our Advisory Services in Brookhaven",
     overviewParagraphs: [
       "Brookhaven is one of Metro Atlanta's most coveted residential cities, known for its historic country club neighborhoods, lush parks, and proximity to Buckhead. Adroit Real Estate Services provides discreet, top-tier representation for luxury homebuyers and investors.",
       "From custom architectural builds near Capital City Club to upscale mixed-use developments along Peachtree Road, our advisors deliver unmatched market intelligence and contract negotiation.",
@@ -196,71 +529,15 @@ export const locationsData = {
       "Private Wealth Asset Advisory"
     ]
   },
-  "kennesaw": {
-    name: "Kennesaw",
-    slug: "kennesaw",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Kennesaw",
-    heroSubtitle: "Your vision, beautifully executed in Kennesaw. Thriving suburban neighborhoods, commercial retail hubs, and high-return investment assets.",
-    overviewTitle: "Our Services in Kennesaw",
-    overviewParagraphs: [
-      "With a strong educational and corporate footprint, Kennesaw offers dynamic opportunities across residential subdivisions and bustling commercial retail parks. Adroit Real Estate Services advises private buyers, corporate tenants, and real estate investors.",
-      "Our advisory practice navigates the local market to identify high-yield rental properties, executive family residences, and prime retail storefronts near Kennesaw Mountain and the university corridor.",
-      "We provide rigorous valuation assessments, lease negotiation, and turnkey transaction support to maximize your returns."
-    ],
-    curateBullets: [
-      "Executive Suburban Residences",
-      "Retail & Student Housing Assets",
-      "High-Yield Investment Advisory"
-    ]
-  },
-  "woodstock": {
-    name: "Woodstock",
-    slug: "woodstock",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Woodstock",
-    heroSubtitle: "Your vision, beautifully executed in Woodstock. Award-winning downtown enclaves, modern luxury farmhouses, and commercial growth hubs.",
-    overviewTitle: "Our Services in Woodstock",
-    overviewParagraphs: [
-      "Recognized nationally for its vibrant downtown district and exceptional quality of life, Woodstock is one of North Atlanta's fastest-growing real estate markets. Adroit Real Estate Services brings sophisticated representation to this high-demand community.",
-      "We advise clients on acquiring walkable downtown brownstones, expansive modern farmhouses, and prime commercial retail properties in Cherokee County.",
-      "Our tailored services include strategic market research, property valuation, and complete closing management for discerning investors."
-    ],
-    curateBullets: [
-      "Downtown Brownstones & Homes",
-      "Modern Luxury Farmhouses",
-      "Commercial Retail Spaces"
-    ]
-  },
-  "norcross": {
-    name: "Norcross",
-    slug: "norcross",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Norcross",
-    heroSubtitle: "Your vision, beautifully executed in Norcross. Historic downtown residences, international business parks, and strategic commercial assets.",
-    overviewTitle: "Our Services in Norcross",
-    overviewParagraphs: [
-      "Norcross combines a rich historic core with one of Gwinnett County's premier international corporate and logistics corridors. Adroit Real Estate Services provides comprehensive guidance for commercial investors, corporate occupiers, and residential buyers.",
-      "We specialize in commercial office parks, light industrial warehousing, and charming historic residential properties near the Norcross city center.",
-      "Our seasoned advisors deliver meticulous contract diligence, lease optimization, and asset management tailored to your specific investment profile."
-    ],
-    curateBullets: [
-      "Corporate Office & Logistics",
-      "Historic District Properties",
-      "Industrial & Flex Assets"
-    ]
-  },
   "sandy-springs": {
     name: "Sandy Springs",
     slug: "sandy-springs",
     state: "Georgia",
+    country: "USA",
     heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80",
     heroTitle: "Real Estate in Sandy Springs",
     heroSubtitle: "Your vision, beautifully executed in Sandy Springs. Riverfront luxury estates, Fortune 500 office headquarters, and premier residential living.",
-    overviewTitle: "Our Services in Sandy Springs",
+    overviewTitle: "Our Advisory Services in Sandy Springs",
     overviewParagraphs: [
       "As a major economic engine of the Southeast, Sandy Springs is home to corporate headquarters, world-class healthcare centers, and secluded luxury riverside estates. Adroit Real Estate Services delivers executive-level advisory in this elite market.",
       "We advise high-net-worth clients on acquiring gated estates along the Chattahoochee River, high-rise luxury condominiums near City Springs, and premier commercial office assets in the Central Perimeter district.",
@@ -272,52 +549,15 @@ export const locationsData = {
       "Executive Condominium Advisory"
     ]
   },
-  "vinings": {
-    name: "Vinings",
-    slug: "vinings",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Vinings",
-    heroSubtitle: "Your vision, beautifully executed in Vinings. Secluded luxury hill estates, historic village charm, and prime low-tax Cobb County properties.",
-    overviewTitle: "Our Services in Vinings",
-    overviewParagraphs: [
-      "Perched on the banks of the Chattahoochee River with picturesque views of the Atlanta skyline, Vinings offers refined village living with the advantage of low Cobb County taxes. Adroit Real Estate Services provides high-touch representation for luxury buyers and sellers.",
-      "We represent exclusive hill estates, private gated enclaves, and boutique commercial offices nestled in Vinings Jubilee and surrounding areas.",
-      "Our team delivers exceptional transaction execution, valuation accuracy, and personalized asset strategies designed to preserve and grow your wealth."
-    ],
-    curateBullets: [
-      "Secluded Skyline View Estates",
-      "Historic Village Residences",
-      "Boutique Office & Retail Assets"
-    ]
-  },
-  "east-cobb": {
-    name: "East Cobb",
-    slug: "east-cobb",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in East Cobb",
-    heroSubtitle: "Your vision, beautifully executed in East Cobb. Prestigious swim/tennis estates, nationally ranked school districts, and prime commercial developments.",
-    overviewTitle: "Our Services in East Cobb",
-    overviewParagraphs: [
-      "East Cobb is renowned for its premier family communities, exceptional public schools, and upscale lifestyle centers such as The Avenue East Cobb. Adroit Real Estate Services delivers bespoke guidance for families and investors in this premier submarket.",
-      "We specialize in luxury custom homes, golf community properties, and high-performing commercial shopping centers throughout East Cobb.",
-      "Our team provides comprehensive market comparisons, negotiation acumen, and white-glove transaction support for a seamless acquisition experience."
-    ],
-    curateBullets: [
-      "Premier Golf & Swim Estates",
-      "Upscale Lifestyle Centers",
-      "High-Value Suburban Portfolios"
-    ]
-  },
   "nashville": {
     name: "Nashville",
     slug: "nashville",
     state: "Tennessee",
+    country: "USA",
     heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80",
     heroTitle: "Real Estate in Nashville",
     heroSubtitle: "Your vision, beautifully executed in Nashville. Iconic luxury high-rises, historic Belle Meade estates, and booming commercial developments.",
-    overviewTitle: "Our Services in Nashville",
+    overviewTitle: "Our Advisory Services in Nashville",
     overviewParagraphs: [
       "Nashville has emerged as one of the nation's most dynamic economic and real estate powerhouses, driven by healthcare, entertainment, and corporate migrations. Adroit Real Estate Services provides institutional-grade consulting in Music City.",
       "From ultra-luxury penthouses in The Gulch and Green Hills to sprawling historic estates in Belle Meade and Williamson County, our advisors deliver unrivaled market access and transaction expertise.",
@@ -328,138 +568,9 @@ export const locationsData = {
       "Belle Meade & Williamson Estates",
       "Commercial & Hospitality Assets"
     ]
-  },
-  "tennessee": {
-    name: "Tennessee",
-    slug: "tennessee",
-    state: "Regional",
-    heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Tennessee",
-    heroSubtitle: "Your vision, beautifully executed across Tennessee. Income-tax-friendly luxury living, industrial logistics corridors, and commercial assets.",
-    overviewTitle: "Our Services in Tennessee",
-    overviewParagraphs: [
-      "With zero state income tax, robust corporate growth, and scenic natural beauty, Tennessee represents an ideal destination for wealth preservation and real estate investment. Adroit Real Estate Services provides comprehensive statewide advisory.",
-      "We guide high-net-worth individuals and corporate entities across Nashville, Memphis, Knoxville, and Chattanooga, identifying prime residential and commercial real estate opportunities.",
-      "Our services encompass portfolio diversification, commercial acquisitions, and strategic due diligence designed to deliver exceptional risk-adjusted returns."
-    ],
-    curateBullets: [
-      "Statewide Wealth Strategies",
-      "Zero Income Tax Investments",
-      "Commercial & Industrial Assets"
-    ]
-  },
-  "rome": {
-    name: "Rome",
-    slug: "rome",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Rome",
-    heroSubtitle: "Your vision, beautifully executed in Rome. Historic riverfront estates, healthcare commercial corridors, and scenic acreage.",
-    overviewTitle: "Our Services in Rome",
-    overviewParagraphs: [
-      "Nestled among the foothills of the Appalachian Mountains where three rivers meet, Rome is a distinguished regional medical and educational hub. Adroit Real Estate Services offers specialized advisory in Floyd County.",
-      "We represent historic residential manors in Between the Rivers, expansive equestrian properties, and healthcare-related commercial real estate.",
-      "Our team provides data-backed valuations, contract structuring, and discreet advisory for buyers and investors in Northwest Georgia."
-    ],
-    curateBullets: [
-      "Historic Riverfront Manors",
-      "Medical Commercial Real Estate",
-      "Equestrian & Acreage Estates"
-    ]
-  },
-  "birmingham": {
-    name: "Birmingham",
-    slug: "birmingham",
-    state: "Alabama",
-    heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Birmingham",
-    heroSubtitle: "Your vision, beautifully executed in Birmingham. Prestigious Mountain Brook estates, downtown urban lofts, and healthcare commercial centers.",
-    overviewTitle: "Our Services in Birmingham",
-    overviewParagraphs: [
-      "Birmingham is Alabama's premier banking, healthcare, and cultural hub, featuring prestigious residential enclaves and thriving downtown revitalization. Adroit Real Estate Services delivers executive consulting across Greater Birmingham.",
-      "From architectural estates in Mountain Brook and Vestavia Hills to adaptive-reuse commercial lofts in the city center, our advisory team brings deep expertise and rigorous execution.",
-      "We assist private clients and institutional investors with portfolio acquisitions, commercial leasing, and long-term asset management."
-    ],
-    curateBullets: [
-      "Mountain Brook Luxury Homes",
-      "Downtown Loft Developments",
-      "Healthcare & Financial Real Estate"
-    ]
-  },
-  "sugar-hill": {
-    name: "Sugar Hill",
-    slug: "sugar-hill",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Sugar Hill",
-    heroSubtitle: "Your vision, beautifully executed in Sugar Hill. Vibrant Town Center living, lakefront access properties, and growing commercial nodes.",
-    overviewTitle: "Our Services in Sugar Hill",
-    overviewParagraphs: [
-      "Sugar Hill has transformed into one of Gwinnett County's most desirable communities, featuring a world-class downtown amphitheater, upscale residences, and close proximity to Lake Lanier. Adroit Real Estate Services provides tailored advisory for this thriving submarket.",
-      "We assist clients in finding luxury single-family homes, modern townhomes near the E-Center, and commercial investment opportunities along Georgia Highway 20.",
-      "Our dedicated team ensures seamless negotiations, clear market insights, and sound investment outcomes."
-    ],
-    curateBullets: [
-      "Town Center Modern Homes",
-      "Lake Lanier Proximity Living",
-      "Commercial Highway Corridors"
-    ]
-  },
-  "milton": {
-    name: "Milton",
-    slug: "milton",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Milton",
-    heroSubtitle: "Your vision, beautifully executed in Milton. Sprawling equestrian estates, luxury custom builds, and rural-elegance communities.",
-    overviewTitle: "Our Services in Milton",
-    overviewParagraphs: [
-      "Consistently ranked among the most affluent and safest cities in the South, Milton is renowned for preserving its rural equestrian character and zoning integrity. Adroit Real Estate Services delivers white-glove advisory for elite luxury buyers in North Fulton.",
-      "We specialize in multi-acre equestrian compounds, gated custom estates in Crabapple, and private golf club communities with the highest construction standards.",
-      "Our advisory ensures discrete transaction management, comprehensive land vetting, and bespoke wealth management integration."
-    ],
-    curateBullets: [
-      "Multi-Acre Equestrian Estates",
-      "Crabapple Village Custom Homes",
-      "Private Gated Golf Enclaves"
-    ]
-  },
-  "suwanee": {
-    name: "Suwanee",
-    slug: "suwanee",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Suwanee",
-    heroSubtitle: "Your vision, beautifully executed in Suwanee. Award-winning Town Center master plans, luxury gated communities, and prime business parks.",
-    overviewTitle: "Our Services in Suwanee",
-    overviewParagraphs: [
-      "Suwanee is celebrated nationally for its vibrant Town Center park, expansive greenway system, and premier gated communities. Adroit Real Estate Services provides expert real estate advisory across Suwanee and the North Gwinnett corridor.",
-      "We represent prestigious homes in gated golf communities such as River Club and Laurel Springs, as well as high-performing commercial office and retail developments.",
-      "Our comprehensive service covers meticulous market analysis, client representation, and asset management for lasting value."
-    ],
-    curateBullets: [
-      "River Club & Gated Golf Living",
-      "Town Center Walkable Properties",
-      "Commercial & Flex Business Parks"
-    ]
-  },
-  "dawsonville": {
-    name: "Dawsonville",
-    slug: "dawsonville",
-    state: "Georgia",
-    heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80",
-    heroTitle: "Real Estate in Dawsonville",
-    heroSubtitle: "Your vision, beautifully executed in Dawsonville. North Georgia mountain-view retreats, commercial retail corridors, and Lake Lanier properties.",
-    overviewTitle: "Our Services in Dawsonville",
-    overviewParagraphs: [
-      "Dawsonville offers an enticing gateway to the North Georgia mountains combined with rapid commercial retail expansion along Georgia 400. Adroit Real Estate Services assists buyers, land developers, and commercial investors.",
-      "We specialize in mountain-view estates, lakefront residences on northern Lake Lanier, and strategic commercial properties near the North Georgia Premium Outlets corridor.",
-      "Our advisors provide in-depth zoning insights, land valuation, and seamless transaction execution for all property acquisitions."
-    ],
-    curateBullets: [
-      "Mountain & Lakefront Retreats",
-      "GA-400 Commercial Corridors",
-      "Strategic Land Investments"
-    ]
   }
 };
+
+// Alias for spelling variations
+locationsData["jaiselmer"] = locationsData["jaisalmer"];
+

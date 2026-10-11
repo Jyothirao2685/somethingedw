@@ -36,7 +36,8 @@ const LocationDetail = () => {
     if (location) {
       setForm(prev => ({
         ...prev,
-        city: location.name
+        city: location.name,
+        country: location.country === 'USA' ? 'United States' : 'India'
       }));
     }
   }, [slug, location]);
